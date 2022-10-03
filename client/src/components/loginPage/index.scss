@@ -1,0 +1,32 @@
+.login-page{
+    height: 100vh;
+    background-image: linear-gradient(lightblue, white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: pulse 5s ease-in infinite;
+    p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: whitesmoke;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        svg{
+            margin-left: 10px;
+            color: cornflowerblue;
+        }
+        &:hover{
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+}

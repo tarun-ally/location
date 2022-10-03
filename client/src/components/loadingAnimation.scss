@@ -1,0 +1,33 @@
+.dot-loader{
+    display: inline-flex;
+    padding: 10px;
+    div{
+        height: 5px;
+        width: 20px;
+        border-radius: 2px;
+        margin: 0 5px;
+        background-color: #dde9fa;
+        animation: pulse 1s ease-in-out infinite;
+    }
+    div:nth-child(1){
+        animation-delay: 0.2s;
+    }
+    div:nth-child(2){
+        animation-delay: 0.4s;
+    }
+    div:nth-child(3){
+        animation-delay: 0.6s;
+    }
+    div:nth-child(4){
+        animation-delay: 0.8s;
+    }
+
+    @keyframes pulse {
+        0%, 100%{
+            background-color: #dde9fa;
+        }
+        50%{
+            background-color: #00bfff;
+        }
+    }
+}

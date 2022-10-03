@@ -1,0 +1,110 @@
+.delete-content{
+
+    background-color: rgb(224, 219, 219);
+    min-width: 60%;
+    margin: 0 auto 0 auto;
+    // scroll-behavior: smooth;
+    min-height: 100vh;
+    width: 70%;
+    // height: 80vh;
+    
+  .heading{
+//   border: 1px solid lightgray;
+                    border-radius: 5px;
+                           margin: 20px 0px 0 0;
+        margin-left: 13%;
+        padding-top: 3%;
+        font-size: 1.3rem;
+  }
+        .input-main{
+
+            //    min-width:  220px;
+                width: 215px;
+
+                margin: 20px 0px 0 0;
+        margin-left: 13%;
+        padding-top: 3%;
+
+                // background-color: aqua;
+                .input{
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+            }
+            input{
+                  margin-top: 2px;
+                height: 30px;
+             
+            }
+           
+                .err-msg{
+                    padding: 10px 0px;
+
+                    color: red;
+                }
+
+
+        }
+           .showing-address{
+            background-color: transparent;
+            width: fit-content;
+            margin:0% 0 0 8% ;
+            padding: 1.5% 5%;
+                    border-radius: 5px;
+
+                    border: 1px solid lightgray;
+                    display: flex;
+                    flex-direction: column;
+            // background-color: red;
+
+            .row{
+                  margin:0% 0 0 0% ;
+            // padding: 1.5% 5%;
+                background-color: rgb(249, 253, 253);
+            background-color: transparent;
+            display: flex;
+               
+                input{
+                    // background-color: rebeccapurpless;
+                    height: 40px;
+                    margin-top: 20px;
+                }
+                .close{
+                    height: 40px;
+                    margin-top: 22px;
+                    margin-left: 10%;
+                    background-color: rebeccapurpless;
+
+                }
+            }
+
+        }
+        .submit-btn{
+            border-radius: 5px;
+            padding: 5% 5%;
+
+            margin-top: 12%;
+            background-color: rgb(182, 248, 248);
+            border: 1px solid rgb(168, 158, 158);
+
+        }
+         .submit-btn:hover{
+            border-radius: 5px;
+            padding: 5% 5%;
+
+            border: 1px solid lightgray;
+            color:white;
+            margin-top: 12%;
+            background-color: rgb(14, 128, 128);
+
+        }
+        .new-input{
+              border-radius: 5px;
+            padding: 5% 5%;
+
+            cursor: pointer;
+            border: 1px solid rgb(168, 158, 158);
+            margin-top: 12%;
+            background-color: rgb(255, 255, 255);
+        }
+
+}
