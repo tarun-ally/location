@@ -6,7 +6,7 @@ const path=require("path")
 require("dotenv").config();
 var corsOptions={
     // origin: "http://localhost:8081"
-    origin: "http://localhost:3000"
+    origin: "https://client-location.vercel.app/"
 
 
 };
