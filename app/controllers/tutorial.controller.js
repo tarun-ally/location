@@ -40,18 +40,20 @@ exports.create=(req,res) => {
 // Retrieve all state location from the database.
 exports.findAll=(req,res) => {
 
-    const state=req.query.state;
-    var condition=state? {state: {$regex: new RegExp(state),$options: "i"}}:{};
-    Tutorial.find(condition)
-        .then(data => {
-            res.send(data);
-        })
-        .catch(err => {
-            res.status(500).send({
-                message: err.message||"Some error occured while retriving tutorials."
+    // const state=req.query.state;
+    // var condition=state? {state: {$regex: new RegExp(state),$options: "i"}}:{};
+    res.send('hi');
 
-            });
-        });
+    // Tutorial.find(condition)
+    //     .then(data => {
+    //         res.send(data);
+    //     })
+    //     .catch(err => {
+    //         res.status(500).send({
+    //             message: err.message||"Some error occured while retriving tutorials."
+
+    //         });
+    //     });
 
 
 
