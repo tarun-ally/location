@@ -22,7 +22,7 @@ app.get("/",(req,res) => {
 //         process.exit();
 //     });
 
-// require("./app/routes/tutorial.routes")(app);
+require("./app/routes/tutorial.routes")(app);
 
 const PORT=process.env.PORT||8080;
 
