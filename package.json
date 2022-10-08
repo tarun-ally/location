@@ -2,7 +2,7 @@
   "name": "nodejs-express-mongodb",
   "version": "1.0.0",
   "description": "making curd api with node.js",
-  "main": "server.js",
+  "main": "index.js",
   "keywords": [
     "nodejs",
     "express",
@@ -11,7 +11,7 @@
     "api"
   ],
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "author": "tarun dev",
   "license": "ISC",
