@@ -10,6 +10,9 @@
     "rest",
     "api"
   ],
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "tarun dev",
   "license": "ISC",
   "dependencies": {
