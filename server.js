@@ -1,14 +1,14 @@
 const express=require("express");
-const cors=require("cors");
+// const cors=require("cors");
 const app=express();
 
 
-app.use(cors());
+// app.use();
 // app.use(express.json());
 
 
-app.get("/",cors(),(req,res) => {
-    res.status(200)
+app.get("/",(req,res) => {
+    res.send('Hello World!')
 })
 // // app.use(...);
 // db.mongoose.connect(process.env.MONGODB_URI,{
