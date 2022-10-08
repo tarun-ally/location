@@ -8,7 +8,7 @@ const app=express();
 
 
 app.get("/",(req,res) => {
-    res.send('Hello World!')
+    res.send('Hello World...')
 })
 // // app.use(...);
 // db.mongoose.connect(process.env.MONGODB_URI,{
