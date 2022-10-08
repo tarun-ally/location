@@ -4,11 +4,11 @@ const app=express();
 
 
 app.use(cors());
-app.use(express.json());
+// app.use(express.json());
 
 
-app.get("/test",cors(),(req,res) => {
-    res.send('vhbh')
+app.get("/",cors(),(req,res) => {
+    res.status(200)
 })
 // // app.use(...);
 // db.mongoose.connect(process.env.MONGODB_URI,{
