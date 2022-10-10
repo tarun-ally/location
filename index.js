@@ -7,9 +7,9 @@ const app=express();
 // app.use(express.json());
 
 
-// app.get("/",(req,res) => {
-//     res.send('Hello World....')
-// })
+app.get("/",(req,res) => {
+    res.send('Hello World....')
+})
 // // app.use(...);
 // db.mongoose.connect(process.env.MONGODB_URI,{
 //     useNewUrlParser: true,
@@ -22,9 +22,10 @@ const app=express();
 //         process.exit();
 //     });
 
-require("./app/routes/tutorial.routes")(app);
+// require("./app/routes/tutorial.routes")(app);
 
-const PORT=process.env.PORT||8080;
+// const PORT=process.env.PORT||8080;
+console.log(process.env.PORT)
 
 app.listen(PORT,() => {
     console.log(`server is running on port${PORT}.`);
