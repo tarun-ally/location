@@ -2,14 +2,14 @@ const express=require("express");
 const cors=require("cors");
 const app=express();
 const db=require("./app/models/index.js");
-
+require('dotenv').config()
 
 app.use(cors());
 // app.use(express.json());
 
 
 app.get("/",(req,res) => {
-    console.log(db)
+    console.log(process.env.MONGODB_URI)
     res.send('Hello World....')
 })
 
@@ -37,6 +37,7 @@ app.get("/api/tutorials",(req,res) => {
 // console.log(process.env.PORT)
 
 app.listen(80,() => {
+    console.log(process.env)
     console.log(`server is running on port${80}.`);
 })
 
