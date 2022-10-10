@@ -1,13 +1,15 @@
 const express=require("express");
 const cors=require("cors");
 const app=express();
+const db=require("./app/models/index.js");
 
 
 app.use(cors());
 // app.use(express.json());
 
 
-app.get("/",cors(),(req,res) => {
+app.get("/",(req,res) => {
+    console.log(db)
     res.send('Hello World....')
 })
 
