@@ -25,7 +25,7 @@ app.get("/",(req,res) => {
 // require("./app/routes/tutorial.routes")(app);
 
 // const PORT=process.env.PORT||8080;
-console.log(process.env.PORT)
+// console.log(process.env.PORT)
 
 app.listen(PORT,() => {
     console.log(`server is running on port${PORT}.`);
