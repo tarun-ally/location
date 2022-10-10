@@ -7,7 +7,7 @@ const app=express();
 // app.use(express.json());
 
 
-app.use("/test",(req,res) => {
+app.get("/",(req,res) => {
     res.send('Hello World....')
 })
 // // app.use(...);
