@@ -19,17 +19,16 @@ app.get("/api/tutorials",(req,res) => {
         state: "AZ",
     }])
 })
-// // app.use(...);
-// db.mongoose.connect(process.env.MONGODB_URI,{
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// }).then(() => {
-//     console.log("connected to database");
-// })
-//     .catch(err => {
-//         console.log("Cannot connect to the database |",err);
-//         process.exit();
-//     });
+db.mongoose.connect("mongodb+srv://tarundev:<Sonu123@>@sakshi.6izpuup.mongodb.net/?retryWrites=true&w=majority",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log("connected to database");
+})
+    .catch(err => {
+        console.log("Cannot connect to the database |",err);
+        process.exit();
+    });
 
 // require("./app/routes/tutorial.routes")(app);
 
