@@ -3,7 +3,7 @@ const cors=require("cors");
 const app=express();
 
 
-// app.use();
+app.use(cors());
 // app.use(express.json());
 
 
@@ -11,7 +11,7 @@ app.get("/",cors(),(req,res) => {
     res.send('Hello World....')
 })
 
-app.get("/api/tutorials",cors(),(req,res) => {
+app.get("/api/tutorials",(req,res) => {
     res.json([{
         location: ["Tarun"],
         state: "AZ",
