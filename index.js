@@ -35,10 +35,10 @@ mongoose.connect(process.env.MONGODB_URI,connectionParams)
         process.exit();
     });
 
-app.get("/test",(req,res) => {
-    res.json({message: "welcome..."});
-});
-// require("./app/routes/tutorial.routes")(app);
+// app.get("/test",(req,res) => {
+//     res.json({message: "welcome..."});
+// });
+require("./app/routes/tutorial.routes")(app);
 const PORT=process.env.PORT||8080;
 // app.get("*",(req,res) => {
 //     res.sendFile(path.join(__dirname,"client","build","index.html"));
