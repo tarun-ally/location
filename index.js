@@ -35,7 +35,7 @@ mongoose.connect(process.env.MONGODB_URI,connectionParams)
         process.exit();
     });
 
-app.get("/",(req,res) => {
+app.get("/test",(req,res) => {
     res.json({message: "welcome..."});
 });
 // require("./app/routes/tutorial.routes")(app);
