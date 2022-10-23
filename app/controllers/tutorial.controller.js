@@ -7,6 +7,10 @@ exports.create=(req,res) => {
     //     res.status(400).send({message: "Content can not be empty!"});
     //     return;
     // }
+    // {
+    //     "location": ["nice"],
+    //         "state": "kite"
+    // }
     console.log(req.body,'red');
     if(!req.body.location) {
         res.status(400).send({message: "location can not be empty!"});
