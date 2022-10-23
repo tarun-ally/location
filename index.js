@@ -36,7 +36,7 @@ mongoose.connect(process.env.MONGODB_URI,connectionParams)
     });
 
 app.get("/",(req,res) => {
-    res.json({message: "welcome"});
+    res.json({message: "welcome..."});
 });
 // require("./app/routes/tutorial.routes")(app);
 const PORT=process.env.PORT||8080;
