@@ -7,9 +7,10 @@ require("dotenv").config();
 const mongoose=require("mongoose");
 var bodyParser=require('body-parser')
 const url=`mongodb+srv://tarundev:Sonu123@sakshi.6izpuup.mongodb.net/?retryWrites=true&w=majority`;
+const PORT=process.env.PORT||8080;
 
 var corsOptions={
-    origin: "http://localhost:8080"
+    origin: `${PORT}`
     // origin: "http://localhost:3000"
 
 
