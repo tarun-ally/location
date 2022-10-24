@@ -10,7 +10,7 @@ const url=`mongodb+srv://tarundev:Sonu123@sakshi.6izpuup.mongodb.net/?retryWrite
 const PORT=process.env.PORT||8080;
 
 var corsOptions={
-    origin: "/(.*)"
+    origin: "*"
 };
 app.use(cors(corsOptions));
 // app.use(cors());
