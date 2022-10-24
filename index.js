@@ -23,6 +23,11 @@ const connectionParams={
     // useCreateIndex: true,
     useUnifiedTopology: true
 }
+
+app.get("/",(req,res) => {
+    // console.log(process.env.MONGODB_URI)
+    res.send('Hello World....')
+})
 mongoose.connect(process.env.MONGODB_URI,connectionParams)
     .then(() => {
         console.log('Connected to the database ')
@@ -92,10 +97,6 @@ app.listen(PORT,() => {
 // //         process.exit();
 // //     });
 
-// app.get("/",(req,res) => {
-//     // console.log(process.env.MONGODB_URI)
-//     res.send('Hello World....')
-// })
 
 // // app.get("/api/tutorials",(req,res) => {
 // //     res.json([{
