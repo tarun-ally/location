@@ -11,9 +11,6 @@ const PORT=process.env.PORT||8080;
 
 var corsOptions={
     origin: `${PORT}`
-    // origin: "http://localhost:3000"
-
-
 };
 app.use(cors(corsOptions));
 // app.use(cors());
@@ -39,7 +36,6 @@ mongoose.connect(process.env.MONGODB_URI,connectionParams)
 //     res.json({message: "welcome..."});
 // });
 require("./app/routes/tutorial.routes")(app);
-const PORT=process.env.PORT||8080;
 // app.get("*",(req,res) => {
 //     res.sendFile(path.join(__dirname,"client","build","index.html"));
 // })
