@@ -10,7 +10,7 @@ const url=`mongodb+srv://tarundev:Sonu123@sakshi.6izpuup.mongodb.net/?retryWrite
 const PORT=process.env.PORT||8080;
 
 var corsOptions={
-    origin: `${PORT}`
+    origin: "/(.*)"
 };
 app.use(cors(corsOptions));
 // app.use(cors());
@@ -24,10 +24,7 @@ const connectionParams={
     useUnifiedTopology: true
 }
 
-app.get("/",(req,res) => {
-    // console.log(process.env.MONGODB_URI)
-    res.send('Hello World....')
-})
+
 mongoose.connect(process.env.MONGODB_URI,connectionParams)
     .then(() => {
         console.log('Connected to the database ')
