@@ -44,8 +44,8 @@ exports.create=(req,res) => {
 // Retrieve all state location from the database.
 exports.findAll=(req,res) => {
 
-    // const state=req.query.state;
-    // var condition=state? {state: {$regex: new RegExp(state),$options: "i"}}:{};
+    const state=req.query.state;
+    var condition=state? {state: {$regex: new RegExp(state),$options: "i"}}:{};
     // res.send('hi');
 
     Tutorial.find(condition)
