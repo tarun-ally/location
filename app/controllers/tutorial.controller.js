@@ -46,18 +46,18 @@ exports.findAll=(req,res) => {
 
     // const state=req.query.state;
     // var condition=state? {state: {$regex: new RegExp(state),$options: "i"}}:{};
-    res.send('hi');
+    // res.send('hi');
 
-    // Tutorial.find(condition)
-    //     .then(data => {
-    //         res.send(data);
-    //     })
-    //     .catch(err => {
-    //         res.status(500).send({
-    //             message: err.message||"Some error occured while retriving tutorials."
+    Tutorial.find(condition)
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: err.message||"Some error occured while retriving tutorials."
 
-    //         });
-    //     });
+            });
+        });
 
 
 
