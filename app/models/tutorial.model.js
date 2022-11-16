@@ -2,14 +2,8 @@ module.exports=mongoose => {
     var schema=mongoose.Schema(
         mongoose.Schema(
             {
-                // title: String,
-                // descreption: String,
-                // published: Boolean,
                 location: Array,
                 state: String,
-
-
-
             },
 
             {timeStamps: true}

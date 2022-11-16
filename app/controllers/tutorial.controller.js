@@ -2,11 +2,7 @@ const db=require("../models");
 const Tutorial=db.tutorials;
 // Create and Save a new Tutorial
 exports.create=(req,res) => {
-    // validate request
-    // if(!req.body.title) {
-    //     res.status(400).send({message: "Content can not be empty!"});
-    //     return;
-    // }
+
     // {
     //     "location": ["nice"],
     //         "state": "kite"
@@ -145,18 +141,7 @@ exports.deleteAll=(req,res) => {
             })
         })
 };
-// Find all published Tutorials
-// exports.findAllPublished=(req,res) => {
-//     Tutorial.find({published: true})
-//         .then(data => {
-//             res.send(data);
-//         })
-//         .catch(err => {
-//             res.status(500).send({
-//                 message: err.message||"Some error occurred while retrieving tutorials. "
-//             });
-//         });
-// };
+
 exports.findAllLocation=(req,res) => {
     Tutorial.find({location: []})
         .then(data => {
